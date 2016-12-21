@@ -1,8 +1,8 @@
-package lab2.lab;
+package ru.spbstu.telematics.java.Lab2_0;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-import lab2.lab.Lab2_LinkedList;;
+import ru.spbstu.telematics.java.Lab2_0.Lab2_LinkedList;
 
 public class Lab2_LinkedListTest {
 	@Test

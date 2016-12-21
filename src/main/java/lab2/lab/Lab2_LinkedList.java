@@ -1,4 +1,4 @@
-package lab2.lab;
+package ru.spbstu.telematics.java.Lab2_0;
 
 import java.util.Collection;
 import java.util.Iterator;

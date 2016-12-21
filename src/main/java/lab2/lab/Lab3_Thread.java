@@ -1,4 +1,4 @@
-package lab2.lab;
+package ru.spbstu.telematics.java.Lab2_0;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -29,12 +29,12 @@ implements Runnable
 }
 
 public class Lab3_Thread {
-	static int n=100;
+	static int n=10;
 	public static int Matrix []=new int[n*n];
 	public static Random rand=new Random();
 
 	public static void main(String[] args) throws InterruptedException {
-		int Thread=8;
+		int Thread=7;
 		int begin=0;
 		int end=n*n/Thread;
 		ArrayList<Thread> list= new ArrayList<Thread>();

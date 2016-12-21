@@ -1,13 +1,16 @@
-package lab2.lab;
+package ru.spbstu.telematics.java.Lab2_0;
 
 import static org.junit.Assert.assertTrue;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Scanner;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import ru.spbstu.telematics.java.Lab2_0.App;
 
 
 
@@ -34,8 +37,14 @@ public class AppTest
 	
 	@Test
 	public void test1(){
+		
 		if(f1.exists())
-		f1.renameTo(f1new);
+			try {
+				FileUtils.moveFile(f1, f1new);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		assertTrue(f1new.exists());
 	}
 	
@@ -43,7 +52,12 @@ public class AppTest
 	public void test2(){
 		
 		if(f2.exists())
-		f2.renameTo(f2new);
+			try {
+				FileUtils.moveFile(f2, f2new);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		assertTrue(f2new.exists());
 	}
 	
@@ -51,7 +65,12 @@ public class AppTest
 	public void test3(){
 
 		if(f3.exists())
-		f3.renameTo(f3new);
+			try {
+				FileUtils.moveFile(f3, f3new);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		assertTrue(f3new.exists());
 
 	}
